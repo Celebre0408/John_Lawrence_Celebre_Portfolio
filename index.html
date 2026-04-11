@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Lawrence L. Celebre - Portfolio</title>
+    <link rel="icon" href="circle.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+
+    <style>
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Subtle 3D */
+        .card {
+            transition: all 0.3s ease;
+            transform-style: preserve-3d;
+        }
+
+        .card:hover {
+            transform: translateY(-8px) scale(1.02);
+        }
+
+        /* Gradient accent */
+        .gradient-text {
+            background: linear-gradient(to right, #0ea5e9, #22c55e);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        /* Soft shadow depth */
+        .depth {
+            box-shadow: 0 20px 50px -20px rgba(0, 0, 0, 0.25);
+        }
+
+        /* Fade in */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <!-- NAV -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+            <h1 class="font-bold text-lg" style="font-family: 'Pacifico', cursive;">
+                JLC | Quality Assurance Tester
+            </h1>
+
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#hero" class="hover:text-sky-600 transition duration-300">Home</a>
+                <a href="#about" class="hover:text-sky-600 transition duration-300">About</a>
+                <a href="#skills" class="hover:text-sky-600 transition duration-300">Skills</a>
+                <a href="#services" class="hover:text-sky-600 transition duration-300">Work</a>
+                <a href="#projects" class="hover:text-sky-600 transition duration-300">Projects</a>
+                <a href="#contact" class="hover:text-sky-600 transition duration-300">Contact</a>
+            </nav>
+
+            <!-- Mobile Button -->
+            <button class="md:hidden text-2xl transition-transform duration-300 active:scale-90" onclick="toggleMenu()">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3 text-sm font-medium bg-white
+                transition-all duration-300 ease-in-out opacity-0 -translate-y-3">
+
+            <a href="#hero" class="hover:text-sky-600 transition">Home</a>
+            <a href="#about" class="hover:text-sky-600 transition">About</a>
+            <a href="#skills" class="hover:text-sky-600 transition">Skills</a>
+            <a href="#services" class="hover:text-sky-600 transition">Work</a>
+            <a href="#projects" class="hover:text-sky-600 transition">Projects</a>
+            <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6">
+
+        <!-- HERO -->
+        <section id="hero" class="py-20 grid md:grid-cols-2 gap-10 items-center">
+
+            <div class="space-y-6 fade-in">
+                <span class="text-sm text-sky-600 font-semibold">Aspiring QA Tester</span>
+
+                <h1 class="text-5xl font-extrabold leading-tight">
+                    Testing <span class="gradient-text">modern systems</span><br>
+                    with precision and reliability.
+                </h1>
+
+                <p class="text-lg text-slate-600 max-w-xl">
+                    Android Enthusiast & Software Tester
+                </p>
+
+                <div class="flex gap-4">
+                    <a href="#projects" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">
+                        View Projects
+                    </a>
+                    <a href="#contact" class="px-6 py-3 border rounded-full hover:bg-slate-100">
+                        Contact Me
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3D FEATURE BOX -->
+            <div class="fade-in">
+                <img src="index.jpg" alt="Core Strengths" class="w-9/12 mx-auto rounded-2xl">
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about" class="py-20 fade-in">
+            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+
+            <p class="text-slate-600 max-w-3xl leading-relaxed">
+                Hi, I’m John Lawrence Celebre, an aspiring QA Tester and a 4th-year student at the University of
+                Rizal System. I specialize in testing systems, admin dashboards, and scalable applications, focusing
+                on improving user experience and system efficiency. I approach testing from an end-user perspective
+                while applying my background in development to identify and resolve bugs effectively.
+            </p>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="py-20 fade-in">
+            <h2 class="text-3xl font-bold mb-3">Skills</h2>
+            <p class="text-slate-600 mb-10 max-w-2xl">
+                A collection of technical tools used for system development and quality assurance testing.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">Frontend Development</h3>
+                    <p class="text-slate-600 text-sm">
+                        HTML, CSS, Tailwind CSS, JavaScript
+                    </p>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">Backend Development</h3>
+                    <p class="text-slate-600 text-sm">
+                        PHP, MySQL, Laravel
+                    </p>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">Development Approach</h3>
+                    <p class="text-slate-600 text-sm">
+                        Problem-solving, UI-focused development, system thinking, and continuous learning
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section id="services" class="py-20 fade-in">
+            <h2 class="text-3xl font-bold mb-3">What I Can Do</h2>
+            <p class="text-slate-600 mb-10 max-w-2xl">
+                Quality assurance and development-focused capabilities for building reliable and efficient systems.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">Software Testing</h3>
+                    <p class="text-slate-600 text-sm">
+                        Manual testing, bug identification, and system validation
+                    </p>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">UI/UX Quality Review</h3>
+                    <p class="text-slate-600 text-sm">
+                        Checking responsiveness, usability, and interface consistency
+                    </p>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">Database & System Testing</h3>
+                    <p class="text-slate-600 text-sm">
+                        Validating data integrity, queries, and backend logic
+                    </p>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold text-lg mb-2">Performance & Debugging</h3>
+                    <p class="text-slate-600 text-sm">
+                        Identifying issues and improving system stability and performance
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="py-20 fade-in">
+            <h2 class="text-3xl font-bold mb-10">Projects</h2>
+            <p class="text-slate-600 mb-10 max-w-2xl">
+                Quality assurance review of my latest project as a web designer, focusing on layout, responsiveness, and
+                visual consistency.
+            </p>
+
+
+            <div class="grid md:grid-cols-3 gap-6">
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold">
+                        Web-Based Management Information System for Youth Life Students Center
+                    </h3>
+                    <p class="text-sm text-slate-500 mt-2">
+                        A web-based system designed to manage student records, attendance
+                        for Youth Life Students Center.
+                    </p>
+                    <br>
+                    <a href="back.html" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold">MLRS - Mhel and Linda Rice Store</h3>
+                    <p class="text-sm text-slate-500 mt-2">A web-based system for managing inventory and sales at MLRS.
+                        With a built-in price checker and a user-friendly interface, it streamlines operations and
+                        enhances customer experience.
+                    </p>
+                    <br>
+                    <a href="back.html" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
+                </div>
+
+                <div class="card depth p-6 rounded-2xl bg-white">
+                    <h3 class="font-semibold">Glucose</h3>
+                    <p class="text-sm text-slate-500 mt-2">A web-based system for managing water intake for dialysis
+                        patients, it also includes features for tracking glucose levels and providing insights for
+                        better health management.
+                    </p>
+
+                    <br>
+                    <a href="back.html" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="py-20 fade-in">
+            <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+            <p class="text-slate-600 mb-6">Let’s Test together.</p>
+
+            <div class="space-y-3 text-slate-700">
+                <p><strong>Email:</strong> lawrencecelebre0408@gmail.com</p>
+                <p><strong>GitHub:</strong> github.com/Celebre_0408</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center py-10 text-sm text-slate-500">
+        © 2026 John Lawrence L. Celebre. All rights reserved.
+    </footer>
+
+    <script>
+        // Scroll animation
+        const elements = document.querySelectorAll(".fade-in");
+
+        window.addEventListener("scroll", () => {
+            elements.forEach(el => {
+                const top = el.getBoundingClientRect().top;
+                if (top < window.innerHeight - 100) {
+                    el.classList.add("show");
+                }
+            });
+        });
+                function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+
+            if (menu.classList.contains("hidden")) {
+                menu.classList.remove("hidden");
+
+                setTimeout(() => {
+                    menu.classList.remove("opacity-0", "-translate-y-3");
+                }, 10);
+
+            } else {
+                menu.classList.add("opacity-0", "-translate-y-3");
+
+                setTimeout(() => {
+                    menu.classList.add("hidden");
+                }, 300);
+            }
+        }
+    </script>
+
+</body>
+
+</html>
