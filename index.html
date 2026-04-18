@@ -8,6 +8,7 @@
     <link rel="icon" href="circle.png" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&amp;display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 
     <style>
         /* Smooth scroll */
@@ -58,15 +59,13 @@
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 
             <h1 class="font-bold text-lg" style="font-family: 'Pacifico', cursive;">
-                JLC | Quality Assurance Tester
+                Lawrence As Quality Assurance Tester
             </h1>
 
             <!-- Desktop Menu -->
             <nav class="hidden md:flex gap-8 text-sm font-medium">
                 <a href="#hero" class="hover:text-sky-600 transition duration-300">Home</a>
                 <a href="#about" class="hover:text-sky-600 transition duration-300">About</a>
-                <a href="#skills" class="hover:text-sky-600 transition duration-300">Skills</a>
-                <a href="#services" class="hover:text-sky-600 transition duration-300">Work</a>
                 <a href="#projects" class="hover:text-sky-600 transition duration-300">Projects</a>
                 <a href="#contact" class="hover:text-sky-600 transition duration-300">Contact</a>
             </nav>
@@ -79,12 +78,10 @@
 
         <!-- Mobile Menu -->
         <div id="mobileMenu" class="hidden md:hidden px-6 pb-4 flex flex-col gap-3 text-sm font-medium bg-white
-                transition-all duration-300 ease-in-out opacity-0 -translate-y-3">
+                    transition-all duration-300 ease-in-out opacity-0 -translate-y-3">
 
             <a href="#hero" class="hover:text-sky-600 transition">Home</a>
             <a href="#about" class="hover:text-sky-600 transition">About</a>
-            <a href="#skills" class="hover:text-sky-600 transition">Skills</a>
-            <a href="#services" class="hover:text-sky-600 transition">Work</a>
             <a href="#projects" class="hover:text-sky-600 transition">Projects</a>
             <a href="#contact" class="hover:text-sky-600 transition">Contact</a>
         </div>
@@ -124,167 +121,212 @@
         </section>
         <!-- ABOUT -->
         <section id="about" class="py-20 fade-in">
-            <h2 class="text-3xl font-bold mb-6">About Me</h2>
+            <!-- SKILLS + SERVICES (MERGED UI) -->
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
 
-            <p class="text-slate-600 max-w-3xl leading-relaxed">
-                Hi, I’m John Lawrence Celebre, an aspiring QA Tester and a 4th-year student at the University of
-                Rizal System. I specialize in testing systems, admin dashboards, and scalable applications, focusing
-                on improving user experience and system efficiency. I approach testing from an end-user perspective
-                while applying my background in development to identify and resolve bugs effectively.
-            </p>
-        </section>
+                    <div
+                        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
 
-        <!-- SKILLS -->
-        <section id="skills" class="py-20 fade-in">
-            <h2 class="text-3xl font-bold mb-3">Skills</h2>
-            <p class="text-slate-600 mb-10 max-w-2xl">
-                A collection of technical tools used for system development and quality assurance testing.
-            </p>
+                        <!-- LEFT CONTENT -->
+                        <div class="lg:pt-4 lg:pr-8">
+                            <div class="lg:max-w-lg">
 
-            <div class="grid md:grid-cols-3 gap-6">
+                                <h2 class="text-base font-semibold text-indigo-600">Skills & Expertise</h2>
 
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">Frontend Development</h3>
-                    <p class="text-slate-600 text-sm">
-                        HTML, CSS, Tailwind CSS, JavaScript
-                    </p>
+                                <p class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+                                    What I Can Do
+                                </p>
+
+                                <p class="mt-6 text-lg text-gray-800">
+                                    A combination of development knowledge and quality assurance practices focused on
+                                    building reliable and user-friendly systems.
+                                </p>
+
+                                <!-- LIST STYLE (from template) -->
+<dl class="mt-10 space-y-8 text-base text-gray-700">
+
+    <div class="relative pl-9 group">
+        <dt class="inline font-semibold text-gray-900">
+            <iconify-icon icon="mdi:monitor-dashboard"
+                class="absolute left-0 top-1 text-black text-xl transition group-hover:text-sky-600">
+            </iconify-icon>
+            Frontend Development
+        </dt>
+        <dd class="inline">
+            Building responsive interfaces using HTML, CSS, Tailwind CSS, and JavaScript.
+        </dd>
+    </div>
+
+    <div class="relative pl-9 group">
+        <dt class="inline font-semibold text-gray-900">
+            <iconify-icon icon="mdi:cog"
+                class="absolute left-0 top-1 text-black text-xl transition group-hover:text-sky-600">
+            </iconify-icon>
+            Backend Development
+        </dt>
+        <dd class="inline">
+            Developing dynamic systems with PHP, MySQL, and Laravel.
+        </dd>
+    </div>
+
+    <div class="relative pl-9 group">
+        <dt class="inline font-semibold text-gray-900">
+            <iconify-icon icon="mdi:bug"
+                class="absolute left-0 top-1 text-black text-xl transition group-hover:text-sky-600">
+            </iconify-icon>
+            Software Testing
+        </dt>
+        <dd class="inline">
+            Manual testing, bug tracking, and system validation from an end-user perspective.
+        </dd>
+    </div>
+
+    <div class="relative pl-9 group">
+        <dt class="inline font-semibold text-gray-900">
+            <iconify-icon icon="mdi:palette"
+                class="absolute left-0 top-1 text-black text-xl transition group-hover:text-sky-600">
+            </iconify-icon>
+            UI/UX Quality Review
+        </dt>
+        <dd class="inline">
+            Ensuring responsiveness, usability, and consistent interface behavior.
+        </dd>
+    </div>
+
+    <div class="relative pl-9 group">
+        <dt class="inline font-semibold text-gray-900">
+            <iconify-icon icon="mdi:database"
+                class="absolute left-0 top-1 text-black text-xl transition group-hover:text-sky-600">
+            </iconify-icon>
+            Database & System Testing
+        </dt>
+        <dd class="inline">
+            Validating data integrity, queries, and backend processes.
+        </dd>
+    </div>
+
+    <div class="relative pl-9 group">
+        <dt class="inline font-semibold text-gray-900">
+            <iconify-icon icon="mdi:rocket-launch"
+                class="absolute left-0 top-1 text-black text-xl transition group-hover:text-sky-600">
+            </iconify-icon>
+            Performance & Debugging
+        </dt>
+        <dd class="inline">
+            Identifying bottlenecks and improving system stability and performance.
+        </dd>
+    </div>
+
+</dl>
+                            </div>
+                        </div>
+
+                        <!-- RIGHT VISUAL -->
+                        <div class="flex items-center justify-center">
+                            <img src="qa.png" alt="Skills Illustration"
+                                class="w-full max-w-md rounded-2xl shadow-xl ring-1 ring-gray-200">
+                        </div>
+
+                    </div>
+
                 </div>
 
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">Backend Development</h3>
-                    <p class="text-slate-600 text-sm">
-                        PHP, MySQL, Laravel
-                    </p>
+            <!-- PROJECTS -->
+            <section id="projects" class="py-20 fade-in">
+                <h2 class="text-3xl font-bold mb-10">Projects</h2>
+                <p class="text-slate-600 mb-10 max-w-2xl">
+                    Quality assurance review of my latest project as a web designer, focusing on layout, responsiveness,
+                    and
+                    visual consistency.
+                </p>
+
+
+                <div class="grid md:grid-cols-3 gap-6">
+
+                    <div class="card depth p-6 rounded-2xl bg-white">
+                        <h3 class="font-semibold">
+                            Web-Based Management Information System for Youth Life Students Center
+                        </h3>
+                        <p class="text-sm text-slate-500 mt-2">
+                            A web-based system designed to manage student records, attendance
+                            for Youth Life Students Center.
+                        </p>
+                        <br>
+                        <a href="back.html"
+                            class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
+                    </div>
+
+                    <div class="card depth p-6 rounded-2xl bg-white">
+                        <h3 class="font-semibold">MLRS - Mhel and Linda Rice Store</h3>
+                        <p class="text-sm text-slate-500 mt-2">A web-based system for managing inventory and sales at
+                            MLRS.
+                            With a built-in price checker and a user-friendly interface, it streamlines operations and
+                            enhances customer experience.
+                        </p>
+                        <br>
+                        <a href="back.html"
+                            class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
+                    </div>
+
+                    <div class="card depth p-6 rounded-2xl bg-white">
+                        <h3 class="font-semibold">Glucose</h3>
+                        <p class="text-sm text-slate-500 mt-2">A web-based system for managing water intake for dialysis
+                            patients, it also includes features for tracking glucose levels and providing insights for
+                            better health management.
+                        </p>
+
+                        <br>
+                        <a href="back.html"
+                            class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
+                    </div>
+
                 </div>
+            </section>
 
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">Development Approach</h3>
-                    <p class="text-slate-600 text-sm">
-                        Problem-solving, UI-focused development, system thinking, and continuous learning
-                    </p>
+            <!-- CONTACT -->
+            <section id="contact" class="py-20 fade-in">
+                <h2 class="text-3xl font-bold mb-6">Contact</h2>
+
+                <p class="text-slate-600 mb-6">Let’s Test together.</p>
+
+                <div class="space-y-3 text-slate-700">
+                    <p><strong>Email:</strong> lawrencecelebre0408@gmail.com</p>
+                    <p><strong>GitHub:</strong> https://github.com/Celebre0408</p>
                 </div>
-
-            </div>
-        </section>
-
-        <!-- SERVICES -->
-        <section id="services" class="py-20 fade-in">
-            <h2 class="text-3xl font-bold mb-3">What I Can Do</h2>
-            <p class="text-slate-600 mb-10 max-w-2xl">
-                Quality assurance and development-focused capabilities for building reliable and efficient systems.
-            </p>
-
-            <div class="grid md:grid-cols-2 gap-6">
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">Software Testing</h3>
-                    <p class="text-slate-600 text-sm">
-                        Manual testing, bug identification, and system validation
-                    </p>
-                </div>
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">UI/UX Quality Review</h3>
-                    <p class="text-slate-600 text-sm">
-                        Checking responsiveness, usability, and interface consistency
-                    </p>
-                </div>
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">Database & System Testing</h3>
-                    <p class="text-slate-600 text-sm">
-                        Validating data integrity, queries, and backend logic
-                    </p>
-                </div>
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold text-lg mb-2">Performance & Debugging</h3>
-                    <p class="text-slate-600 text-sm">
-                        Identifying issues and improving system stability and performance
-                    </p>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- PROJECTS -->
-        <section id="projects" class="py-20 fade-in">
-            <h2 class="text-3xl font-bold mb-10">Projects</h2>
-            <p class="text-slate-600 mb-10 max-w-2xl">
-                Quality assurance review of my latest project as a web designer, focusing on layout, responsiveness, and
-                visual consistency.
-            </p>
-
-
-            <div class="grid md:grid-cols-3 gap-6">
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold">
-                        Web-Based Management Information System for Youth Life Students Center
-                    </h3>
-                    <p class="text-sm text-slate-500 mt-2">
-                        A web-based system designed to manage student records, attendance
-                        for Youth Life Students Center.
-                    </p>
-                    <br>
-                    <a href="back.html" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
-                </div>
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold">MLRS - Mhel and Linda Rice Store</h3>
-                    <p class="text-sm text-slate-500 mt-2">A web-based system for managing inventory and sales at MLRS.
-                        With a built-in price checker and a user-friendly interface, it streamlines operations and
-                        enhances customer experience.
-                    </p>
-                    <br>
-                    <a href="back.html" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
-                </div>
-
-                <div class="card depth p-6 rounded-2xl bg-white">
-                    <h3 class="font-semibold">Glucose</h3>
-                    <p class="text-sm text-slate-500 mt-2">A web-based system for managing water intake for dialysis
-                        patients, it also includes features for tracking glucose levels and providing insights for
-                        better health management.
-                    </p>
-
-                    <br>
-                    <a href="back.html" class="px-6 py-3 bg-slate-900 text-white rounded-full hover:bg-slate-800">Screenshot</a>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- CONTACT -->
-        <section id="contact" class="py-20 fade-in">
-            <h2 class="text-3xl font-bold mb-6">Contact</h2>
-
-            <p class="text-slate-600 mb-6">Let’s Test together.</p>
-
-            <div class="space-y-3 text-slate-700">
-                <p><strong>Email:</strong> lawrencecelebre0408@gmail.com</p>
-                <p><strong>GitHub:</strong> github.com/Celebre_0408</p>
-            </div>
-        </section>
+            </section>
 
     </main>
 
     <footer class="text-center py-10 text-sm text-slate-500">
         © 2026 John Lawrence L. Celebre. All rights reserved.
     </footer>
-
     <script>
-        // Scroll animation
+        // Scroll animation (FIXED VERSION)
         const elements = document.querySelectorAll(".fade-in");
 
-        window.addEventListener("scroll", () => {
+        function revealOnScroll() {
             elements.forEach(el => {
                 const top = el.getBoundingClientRect().top;
+
                 if (top < window.innerHeight - 100) {
                     el.classList.add("show");
                 }
             });
+        }
+
+        // Run on scroll
+        window.addEventListener("scroll", revealOnScroll);
+
+        // Run when page loads (THIS FIXES HERO NOT SHOWING)
+        window.addEventListener("load", () => {
+            revealOnScroll();
         });
-                function toggleMenu() {
+
+        // Extra safety (ensures immediate render)
+        revealOnScroll();
+
+
+        function toggleMenu() {
             const menu = document.getElementById("mobileMenu");
 
             if (menu.classList.contains("hidden")) {
