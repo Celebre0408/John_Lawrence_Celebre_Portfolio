@@ -1,39 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="icon" href="circle.png" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Temporarily Unavailable</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 </head>
 
-<body>
+<body class="bg-gray-900 text-white">
 
-    <body class="bg-base-200">
+<div class="py-24 sm:py-32">
+  <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
 
-        <div class="hero min-h-screen">
-            <div class="hero-content flex-col lg:flex-row-reverse w-full max-w-6xl mx-[25px] sm:mx-6 lg:mx-auto">
+    <!-- HEADER -->
+    <h2 class="text-center text-base font-semibold text-indigo-400">
+        Maintenance Mode
+    </h2>
 
-                <img src="index.jpg" class="max-w-sm w-full rounded-lg shadow-2xl" />
+    <p class="mx-auto mt-2 max-w-lg text-center text-4xl font-semibold tracking-tight sm:text-5xl">
+        Page Temporarily Unavailable
+    </p>
 
-                <div>
-                    <h1 class="text-5xl font-bold">Hi!</h1>
+    <p class="mt-6 text-center text-gray-400 max-w-2xl mx-auto">
+        We are currently improving this page to provide a better experience.
+        Please check back later.
+    </p>
 
-                    <p class="py-6">
-                        I apologize for the inconvenience. The page you are looking for is currently under
-                        construction.
-                        Thank you for your patience and understanding.
-                    </p>
+    <!-- GRID -->
+    <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
 
-                    <a href="index.html" class="btn btn-primary">Back</a>
-                </div>
+      <!-- MAIN CARD -->
+      <div class="relative lg:row-span-2">
+        <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+
+        <div class="relative flex h-full flex-col overflow-hidden rounded-2xl">
+
+          <div class="px-8 pt-8 sm:px-10">
+            <p class="text-lg font-medium text-white">System Update</p>
+            <p class="mt-2 text-sm text-gray-400">
+              We are upgrading performance, fixing bugs, and improving UI/UX stability.
+            </p>
+          </div>
+
+          <div class="flex justify-center items-center grow p-10">
+            <div class="text-center space-y-4">
+
+              <div class="text-6xl">🚧</div>
+
+              <p class="text-gray-300">
+                This section is under maintenance
+              </p>
+
+              <a href="index.html"
+                 class="inline-block mt-4 px-6 py-2 bg-indigo-500 hover:bg-indigo-600 rounded-full text-white font-medium">
+                 Go Back Home
+              </a>
 
             </div>
+          </div>
+
         </div>
 
-    </body>
+        <div class="pointer-events-none absolute inset-px rounded-lg outline outline-white/10"></div>
+      </div>
 
+      <!-- CARD 1 -->
+      <div class="relative">
+        <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+
+        <div class="relative flex flex-col h-full overflow-hidden rounded-2xl p-8">
+
+          <p class="text-lg font-medium text-white">Why this happens</p>
+          <p class="mt-2 text-sm text-gray-400">
+            We deploy updates, fix bugs, and improve web performance regularly.
+          </p>
+
+        </div>
+
+        <div class="pointer-events-none absolute inset-px rounded-lg outline outline-white/10"></div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="relative">
+        <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+
+        <div class="relative flex flex-col h-full overflow-hidden rounded-2xl p-8">
+
+          <p class="text-lg font-medium text-white">Estimated Time</p>
+          <p class="mt-2 text-sm text-gray-400">
+            We will be back shortly once updates are complete.
+          </p>
+
+        </div>
+
+        <div class="pointer-events-none absolute inset-px rounded-lg outline outline-white/10"></div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="relative lg:col-start-2 lg:row-start-2">
+        <div class="absolute inset-px rounded-lg bg-gray-800"></div>
+
+        <div class="relative flex flex-col h-full overflow-hidden rounded-2xl p-8">
+
+          <p class="text-lg font-medium text-white">Need Help?</p>
+          <p class="mt-2 text-sm text-gray-400">
+            You can contact the developer if this issue persists.
+          </p>
+
+          <div class="mt-4 text-sm text-indigo-300">
+            lawrencecelebre0408@gmail.com
+          </div>
+
+        </div>
+
+        <div class="pointer-events-none absolute inset-px rounded-lg outline outline-white/10"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
